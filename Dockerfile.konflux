@@ -78,3 +78,11 @@ HEALTHCHECK NONE
 ENV ORCHESTRATOR_CONFIG=/app/config/config.yaml
 
 CMD ["/app/bin/fms-guardrails-orchestr8"]
+
+LABEL name="rhoai/odh-fms-guardrails-orchestrator-rhel9" \
+      com.redhat.component="odh-fms-guardrails-orchestrator-rhel9" \
+      io.k8s.display-name="odh-fms-guardrails-orchestrator-rhel9" \
+      io.k8s.description="The Guardrails Orchestrator serves as a REST API orchestrator that coordinates AI text generation with safety guardrails, acting as middleware between clients and language models to provide content safety detection, filtering, and secure text generation. It manages multiple detector services, chunking services, and LLM backends through unified APIs, ensuring harmful content is blocked while enabling safe AI interactions." \
+      description="The Guardrails Orchestrator serves as a REST API orchestrator that coordinates AI text generation with safety guardrails, acting as middleware between clients and language models to provide content safety detection, filtering, and secure text generation. It manages multiple detector services, chunking services, and LLM backends through unified APIs, ensuring harmful content is blocked while enabling safe AI interactions." \
+      summary="A REST API orchestrator that enforces content safety by coordinating detectors, filters, and LLMs for secure AI text generation." \
+      com.redhat.license_terms="https://www.redhat.com/licenses/Red_Hat_Standard_EULA_20191108.pdf"
